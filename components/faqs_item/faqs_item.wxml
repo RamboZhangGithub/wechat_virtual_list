@@ -1,0 +1,15 @@
+<view class="faqItemMap" bindtap="itemClick" style="height:{{itemData.height}}px;">
+  <view class="ellipsis2 faqsItemTitle">{{itemData.title}}</view>
+  <view class="faqsContent">
+    <view class="ellipsis3 faqsDes">
+      <text class="qname">{{itemData.content}}</text>
+    </view>
+  </view>
+  <view>
+    <button class="cu-btn noAnswerBtn"><text class="cuIcon-questionfill"
+        style="font-size:30rpx;margin-right:4rpx;"></text> 暂无回答，写一个吧</button>
+  </view>
+</view>
+<view style="background:#fff;">
+  <view class="line"></view>
+</view>

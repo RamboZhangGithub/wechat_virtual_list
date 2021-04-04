@@ -1,0 +1,28 @@
+<!--pages/index/search/search.wxml-->
+<view class="container">
+  <!-- 搜索框 -->
+  <view class="top">
+    <view class="searchBox">
+      <span class="iconfont icon-sousuo"></span>
+      <input value="{{content}}" placeholder="搜一搜回答" placeholder-style="color:#B2B2B2;" bindinput="searchInput"
+        bindconfirm="search" confirm-type="search"></input>
+      <icon wx:if="{{content}}" bindtap="clearSearch" class="icon-small" type="cancel" size="18" color="#999"
+        style="padding:0 10rpx;"></icon>
+    </view>
+    <view style="color:#4177FF;" bindtap="search">搜索</view>
+  </view>
+
+  <!-- 列表 -->
+  <scroll-view class="lsmap" id="screenSee" scroll-y bindscrolltolower="bindscrolltolower" bindscroll="bindscroll">
+    <view style="height: {{ headerHeight }}px;"></view>
+    <view wx:for="{{pageList}}" wx:if="{{item.visible}}" wx:key="index" id="listPageId{{index}}">
+      <faqsItem canCtl="{{false}}" bind:itemClick="faqsItemClick" wx:for="{{item.data}}" wx:key="id" wx:for-item="qItem"
+        wx:for-index="qIndex" bind:ctlClick="showCtlModal" bind:getPhoneNumber="itemGetPhoneNumber" phone="{{phone}}"
+        accessToken="{{accessToken}}" itemData="{{qItem}}" data-item="{{qItem}}" data-index="{{index}}"
+        data-qindex="{{qIndex}}">
+      </faqsItem>
+    </view>
+    <view style=" height: {{bottomHeight}}px;"></view>
+    <empty isEmpty="{{isEmpty}}" noMore="{{noMore}}"></empty>
+  </scroll-view>
+</view>

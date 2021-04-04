@@ -1,0 +1,73 @@
+.faqItemMap {
+  padding: 25rpx 36rpx;
+  background: #fff;
+}
+
+.faqsItemTitle {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #353535;
+  line-height: 40rpx;
+  margin-bottom: 14rpx;
+}
+
+
+.faqsContent {
+  display: flex;
+}
+
+.faqsDes {
+  flex: 1;
+  font-size: 28rpx;
+  font-weight: 500;
+  line-height: 40rpx;
+  max-height: 120rpx;
+  color: #525252;
+}
+
+.qname {
+  color: #4177FF;
+}
+
+.qimg {
+  width: 220rpx;
+  height: 137rpx;
+  border-radius: 16rpx;
+  flex-shrink: 0;
+  margin-left: 26rpx;
+}
+
+.faqsTipsMap {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #A9A9A9;
+  margin-top: 16rpx;
+}
+
+.faqsTime {
+  margin-right: 15rpx;
+}
+
+.qTotal {
+  margin-right: 15rpx;
+}
+
+.line {
+  margin: 0 36rpx;
+  height: 2rpx;
+  background: #F7F7F7;
+}
+
+.noAnswerBtn {
+  padding: 0 20rpx;
+  background: #F6F9FF;
+  background-color: #F6F9FF !important;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #4177FF;
+  line-height: 50rpx;
+  height: auto;
+  border-radius: 25rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "empty":"../../components/empty/empty",
+    "faqsItem":"../../components/faqs_item/faqs_item"
+  }
+}

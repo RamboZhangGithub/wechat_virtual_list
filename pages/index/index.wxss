@@ -1,0 +1,89 @@
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #F7F7F7;
+}
+
+.top {
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2rpx solid #F7F7F7;
+  background: #fff;
+  z-index: 1;
+}
+
+.searchBox {
+  flex: 1;
+  height: 72rpx;
+  background: #F7F7F7;
+  border-radius: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28prx;
+  color: #B2B2B2;
+  font-weight: 500;
+  padding: 0 30rpx;
+  margin-right: 18rpx;
+}
+
+.top span {
+  color: #B2B2B2;
+  font-size: 28rpx;
+  margin: 0 17rpx 0 10rpx;
+}
+
+input {
+  flex: 1;
+  color: #363636;
+  font-size: 28rpx;
+  font-weight: bold;
+  align-items: center;
+}
+
+.history {
+  width: 150rpx;
+  height: 100%;
+  font-size: 28rpx;
+  color: #363636;
+  font-weight: bold;
+  text-align: center;
+  line-height: 90rpx;
+}
+
+.allHistory {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.allHistory view {
+  max-width: 660rpx;
+  padding: 10rpx 30rpx;
+  box-sizing: border-box;
+  border-radius: 40rpx;
+  font-size: 24rpx;
+  color: #888888;
+  line-height: 60rpx;
+  background-color: #F7F7F7;
+  margin: 10rpx 30rpx 10rpx 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.lsmap {
+  margin-top: 104rpx;
+  height: calc(100vh - 104rpx - (env(safe-area-inset-bottom) / 2));
+}
